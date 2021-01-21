@@ -1,0 +1,32 @@
+{
+    "description":{
+        "X": [
+            "TIME",
+            "SL",
+            "EEG",
+            "BP",
+            "HR",
+            "CIRCULATION"
+        ],
+        "final_columns":[
+            "TIME",
+            "BP",
+            "HR",
+            "CIRCULATION"
+                ],
+        "y":"FALLING",
+        "metrics":"accuracy_score"
+    },
+    "operations":[
+        {
+        "operation_number": 1,
+        "operation_name": "drop_columns",
+        "params": {
+          "in_columns": [
+            "SL",
+            "EEG"
+          ]
+        }
+      }
+    ]
+}
